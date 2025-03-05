@@ -9,35 +9,35 @@
 <body>
     <h2>Registrera dig</h2>
     <form action="https://httpbin.org/anything" method="post">
-        <label for="fname">Förnamn:</label>
-        <input type="text" id="fname" name="fname" required>
-
-        <label for="lname">Efternamn:</label>
-        <input type="text" id="lname" name="lname" required>
-
-        <label for="username">Användarnamn:</label>
-        <input type="text" id="username" name="username" required>
-
-        <label for="password">Lösenord:</label>
-        <input type="password" id="password" name="password" required>
-
+        <label for="fornamn">Förnamn:</label>
+        <input type="text" id="fornamn" name="fornamn" required>
+        
+        <label for="efternamn">Efternamn:</label>
+        <input type="text" id="efternamn" name="efternamn" required>
+        
+        <label for="anvandarnamn">Användarnamn:</label>
+        <input type="text" id="anvandarnamn" name="anvandarnamn" required>
+        
+        <label for="losenord">Lösenord:</label>
+        <input type="password" id="losenord" name="losenord" required>
+        
         <label for="email">E-post:</label>
         <input type="email" id="email" name="email" required>
-
+        
         <label for="kattras">Favorit-kattras:</label>
         <select id="kattras" name="kattras">
             <option value="perser">Perser</option>
+            <option value="mainecoon">Maine Coon</option>
+            <option value="ragdoll">Ragdoll</option>
             <option value="siames">Siames</option>
-            <option value="maine-coon">Maine Coon</option>
-            <option value="bengal">Bengal</option>
         </select>
 
         <label>
-            <input type="checkbox" name="terms" required>
-            Jag godkänner villkoren
+            <input type="checkbox" name="villkor" required> Jag godkänner villkoren
         </label>
 
         <button type="submit">Registrera</button>
     </form>
 </body>
 </html>
+
