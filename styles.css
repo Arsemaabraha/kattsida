@@ -1,84 +1,91 @@
-/* Grundstil */
+/* Grundläggande stil */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f8f8;
 }
 
 /* Navigering */
 nav {
+    background-color: #ffcc00;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
 }
 
-.logo {
-    color: white;
-    font-size: 24px;
-}
-
-.nav-links {
+.menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 20px;
 }
 
-.nav-links li {
-    display: inline;
+.menu li {
+    margin: 0 15px;
 }
 
-.nav-links a {
+.menu a {
     text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
     color: white;
-    padding: 8px 12px;
 }
 
-.nav-links a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-/* Hamburgarmeny (visas i mobil-läge) */
-.hamburger {
-    display: none;
-    font-size: 28px;
-    color: white;
-    cursor: pointer;
-}
-
-/* Kattbilder */
-.cat-gallery img {
-    width: 300px;
-    margin: 10px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.cat-gallery img:hover {
-    transform: scale(1.1);
-}
-
-/* Knappstil */
+/* Hover-effekt på knappen */
 .btn {
-    background-color: orange;
-    padding: 8px 12px;
+    background-color: #ff6600;
+    padding: 8px 15px;
     border-radius: 5px;
+    color: white !important;
 }
 
 .btn:hover {
-    background-color: darkorange;
+    background-color: #cc5500;
 }
 
-/* Responsiv design */
-@media (max-width: 768px) {
-    .nav-links {
+/* Bilder */
+.bilder img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.bilder img:hover {
+    transform: scale(1.1);
+}
+
+/* Hamburgarmeny (visas endast på mobil) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* RESPONSIV DESIGN */
+@media screen and (max-width: 768px) {
+    .menu {
         display: none;
+        flex-direction: column;
+        background: #ffcc00;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
     }
+
+    .menu li {
+        padding: 10px;
+    }
+
     .hamburger {
         display: block;
     }
 }
+
